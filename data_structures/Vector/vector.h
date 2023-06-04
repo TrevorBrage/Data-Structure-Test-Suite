@@ -98,7 +98,7 @@ void delete_at(DynamicArray*, int index);
  *
  * @param item The item to be removed.
  */
-void remove(DynamicArray* array, int item);
+void remove_item(DynamicArray* array, int item);
 
 /**
  * @brief Looks for the specified item in the array and returns the index of the first occurrence.
