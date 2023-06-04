@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
-#include "../data_structures/Vector/vector.h"
+#include "../data_structures/vector/vector.h"
 
 void run_tests();
 
