@@ -1,5 +1,7 @@
 typedef struct {
-  
+  int size;
+  int capacity;
+  int* data;
 } DynamicArray;
 
 
@@ -9,7 +11,7 @@ typedef struct {
  * The function can allocate an int array without utilizing its features.
  * The initial size is set to 16, or if the starting number is greater, a power of 2 (16, 32, 64, 128, etc.).
  */
-DynamicArray* create_dynamic_array();
+DynamicArray create_dynamic_array();
 
 /**
  * @brief Returns the number of items in the array.
@@ -120,3 +122,16 @@ int find(DynamicArray* array, int item);
  * @param new_capacity The new capacity of the array.
  */
 void resize(DynamicArray* array, int new_capacity);
+
+/**
+ * @brief Sets the value at the specified index in the DynamicArray.
+ *
+ * This function sets the value at the given index in the DynamicArray.
+ *
+ * @param array Pointer to the DynamicArray.
+ * @param index The index at which the value should be set.
+ * @param value The value to be set at the specified index.
+ * @return Returns 0 if successful, or a negative value if an error occurred.
+ *
+ */
+int set(DynamicArray* array, int index, int value);
